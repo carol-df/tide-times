@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-GB": {
+          "summary": "Tide times returns the tide times at a specified tidal station today.",
+          "examplePhrases": [
+            "Alexa, ask Tide Times for tide times in Bude",
+            "Alexa, ask Tide Times for times in Truro",
+            "Alexa, ask Tide Times for stations in Cornwall."
+          ],
+          "keywords": [
+            "tide",
+            "times"
+          ],
+          "name": "TideTimesUK",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/5be0/13f921e1abec499398b27c1925157015/APP_ICON?versionId=VR8YF.2BF5mr73qFUYG4ziaRQt1o6TS.&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1548066466&Signature=1%2BCeFkDHw3tPWKDfEJwhMub435U%3D",
+          "description": "Tide Times lists of the times of each low and high tide today at your chosen station.\n'Ask Tide Times for tide times in Bude'\n\nIf you have an echo spot or echo show the tide times are displayed for you.\n\nThe available counties are : Cornwall. More to come very soon.\n\nIf you don't know the name of a tidal station but it is in Cornwall, for example:\n'Ask Tide Times for stations in Cornwall'\n\nThe data comes from the UK Hydrographic Office which provides tidal predications from the UK's largest authoritative network of tidal stations.\n“Contains ADMIRALTY ® tidal data: © Crown copyright and database right” T",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/7b5f/7afc111440b0427cbf66610c954711e7/APP_ICON_LARGE?versionId=41kIoZ_9bg0yXrGAR39qvH21J57yqcp6&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1548066466&Signature=9QLnRdaYlvdLlBbpGicOICjuNRU%3D"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Ask Tide Times for tide times in Bude",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "./lambda/eu-west-1_aws-serverless-repository-alexaskillskitnodejsfact-OY64WWKQZMQM"
+        },
+        "interfaces": [
+          {
+            "type": "RENDER_TEMPLATE",
+            "minimumTemplateVersion": "1.0"
+          },
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
