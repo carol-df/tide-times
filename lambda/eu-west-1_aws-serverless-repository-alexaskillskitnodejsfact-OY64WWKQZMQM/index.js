@@ -39,6 +39,8 @@ function tideFormat(response) {
   var string = '';
   console.log(response);
   for (var i=0, len = response.length; i < len; i++){
+    if(response[i].DateTime != null)
+    {
       var now = new Date(response[i].DateTime);
       string = string + response[i].EventType + ' ' + now.toLocaleTimeString().replace(/(:\d{2}| [AP]M)$/, "");
       response[i].Time = now.toLocaleTimeString().replace(/(:\d{2}| [AP]M)$/, "");
@@ -48,6 +50,7 @@ function tideFormat(response) {
       else {
         string = string + ', ';
       }
+    }
   }
   console.log(string);
   return string;
