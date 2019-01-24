@@ -88,17 +88,26 @@ const GetTidalDataHandler = {
         }
       };
       console.log(myData);
-      return handlerInput.responseBuilder
-              .speak(prompt)
-              .reprompt("What would you like?")
-              .withSimpleCard('Tide Times UK', prompt)
-              .addDirective({
-                type: "Alexa.Presentation.APL.RenderDocument",
-                token: 'tidesToken',
-                document: myDoc,
-                datasources: myData
-              })
-              .getResponse();
+      if(handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL'])
+      { 
+        return handlerInput.responseBuilder
+                .speak(prompt)
+                .reprompt("What would you like?")
+                .withSimpleCard('Tide Times UK', prompt)
+                .addDirective({
+                  type: "Alexa.Presentation.APL.RenderDocument",
+                  token: 'tidesToken',
+                  document: myDoc,
+                  datasources: myData
+                })
+                .getResponse();
+      } else {
+        return handlerInput.responseBuilder
+                .speak(prompt)
+                .reprompt("What would you like?")
+                .withSimpleCard('Tide Times UK', prompt)
+                .getResponse();
+      }
     }
   },
 };
@@ -206,6 +215,8 @@ const GetTidalStationsHandler = {
       };
       
     }  
+    if(handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL'])
+    {
       return handlerInput.responseBuilder
         .speak(prompt)
         .reprompt(HELP_REPROMPT)
@@ -218,7 +229,14 @@ const GetTidalStationsHandler = {
           datasources: myData
         })
         .getResponse();
-    
+    } else {
+      return handlerInput.responseBuilder
+        .speak(prompt)
+        .reprompt(HELP_REPROMPT)
+        .withSimpleCard('Tide Times UK', prompt)
+        .withShouldEndSession(false)
+        .getResponse();
+    }
   },
 };
 
@@ -227,16 +245,25 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-    return handlerInput.responseBuilder
-      .speak('Welcome to Tide Times. ' + HELP_MESSAGE)
-      .reprompt(HELP_MESSAGE)
-      .withSimpleCard('Tide Times UK', 'Welcome to Tide Times.')
-      .addDirective({
-        type: "Alexa.Presentation.APL.RenderDocument",
-        document: require('./launchrequest.json'),
-        datasources: {}
-      })
-      .getResponse();
+    if(handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL'])
+    {
+      return handlerInput.responseBuilder
+        .speak('Welcome to Tide Times. ' + HELP_MESSAGE)
+        .reprompt(HELP_MESSAGE)
+        .withSimpleCard('Tide Times UK', 'Welcome to Tide Times.')
+        .addDirective({
+          type: "Alexa.Presentation.APL.RenderDocument",
+          document: require('./launchrequest.json'),
+          datasources: {}
+        })
+        .getResponse();
+    } else {
+      return handlerInput.responseBuilder
+        .speak('Welcome to Tide Times. ' + HELP_MESSAGE)
+        .reprompt(HELP_MESSAGE)
+        .withSimpleCard('Tide Times UK', 'Welcome to Tide Times.')
+        .getResponse();
+    }
   },
 };
 
