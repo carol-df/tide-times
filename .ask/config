@@ -15,12 +15,12 @@
         "lambda": [
           {
             "arn": "arn:aws:lambda:eu-west-1:712895734940:function:aws-serverless-repository-alexaskillskitnodejsfact-OY64WWKQZMQM",
-            "awsRegion": "eu-west-1",
-            "functionName": "aws-serverless-repository-alexaskillskitnodejsfact-OY64WWKQZMQM",
+            "awsRegion": "us-east-1",
+            "functionName": "arn:aws:lambda:eu-west-1:712895734940:function:aws-serverless-repository-alexaskillskitnodejsfact-OY64WWKQZMQM",
             "alexaUsage": [
               "custom/default"
             ],
-            "revisionId": "c372003c-3d18-44b9-a0da-6d46e63f9d75"
+            "revisionId": "95c959d8-e2ae-4eee-bc9f-b47a12ac8a1c"
           }
         ]
       },
