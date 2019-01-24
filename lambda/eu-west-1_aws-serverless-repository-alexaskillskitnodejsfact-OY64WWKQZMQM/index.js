@@ -92,9 +92,8 @@ const GetTidalDataHandler = {
       { 
         return handlerInput.responseBuilder
                 .speak(prompt)
-                .reprompt("What would you like?")
+                .reprompt(HELP_REPROMPT)
                 .withSimpleCard('Tide Times UK', prompt)
-                .withShouldEndSession(true)
                 .addDirective({
                   type: "Alexa.Presentation.APL.RenderDocument",
                   token: 'tidesToken',
@@ -105,9 +104,8 @@ const GetTidalDataHandler = {
       } else {
         return handlerInput.responseBuilder
                 .speak(prompt)
-                .reprompt("What would you like?")
+                .reprompt(HELP_REPROMPT)
                 .withSimpleCard('Tide Times UK', prompt)
-                .withShouldEndSession(true)
                 .getResponse();
       }
     }
