@@ -94,8 +94,8 @@ const GetTidalDataHandler = {
       if(handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL'])
       { 
         return handlerInput.responseBuilder
-                .speak(prompt)
-                .reprompt(HELP_REPROMPT)
+                .speak(prompt + 'What can I help you with?')
+                .reprompt(HELP_MESSAGE)
                 .withSimpleCard('Tide Times UK', prompt)
                 .addDirective({
                   type: "Alexa.Presentation.APL.RenderDocument",
@@ -106,8 +106,8 @@ const GetTidalDataHandler = {
                 .getResponse();
       } else {
         return handlerInput.responseBuilder
-                .speak(prompt)
-                .reprompt(HELP_REPROMPT)
+                .speak(prompt + 'What can I help you with?')
+                .reprompt(HELP_MESSAGE)
                 .withSimpleCard('Tide Times UK', prompt)
                 .getResponse();
       }
@@ -221,8 +221,8 @@ const GetTidalStationsHandler = {
     if(handlerInput.requestEnvelope.context.System.device.supportedInterfaces['Alexa.Presentation.APL'])
     {
       return handlerInput.responseBuilder
-        .speak(prompt)
-        .reprompt(HELP_REPROMPT)
+        .speak(prompt + 'What can I help you with?')
+        .reprompt(HELP_MESSAGE)
         .withSimpleCard('Tide Times UK', prompt)
         .withShouldEndSession(false)
         .addDirective({
@@ -234,8 +234,8 @@ const GetTidalStationsHandler = {
         .getResponse();
     } else {
       return handlerInput.responseBuilder
-        .speak(prompt)
-        .reprompt(HELP_REPROMPT)
+        .speak(prompt + 'What can I help you with?')
+        .reprompt(HELP_MESSAGE)
         .withSimpleCard('Tide Times UK', prompt)
         .withShouldEndSession(false)
         .getResponse();
