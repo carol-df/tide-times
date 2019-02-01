@@ -922,37 +922,172 @@
               "name": {
                 "value": "Wellhouse Rock"
               }
-            }
+            },
+            {"id":"0114","name":{"value":"Albert Bridge"}},
+            {"id":"0113A","name":{"value":"Chelsea Bridge"}},
+            {"id":"0113","name":{"value":"LONDON BRIDGE"}},
+            {"id":"0112","name":{"value":"NORTH WOOLWICH"}},
+            {"id":"0063","name":{"value":"Redbridge"}},
+            {"id":"0042","name":{"value":"Bucklers Hard"}},
+            {"id":"0063B","name":{"value":"Bursledon"}},
+            {"id":"0061","name":{"value":"Calshot Castle"}},
+            {"id":"0039","name":{"value":"Hurst Point"}},
+            {"id":"0064","name":{"value":"Lee-On-The-Solent"}},
+            {"id":"0040","name":{"value":"LYMINGTON"}},
+            {"id":"0068A","name":{"value":"Northney"}},
+            {"id":"0065","name":{"value":"PORTSMOUTH"}},
+            {"id":"0065A","name":{"value":"PORTSMOUTH HIGH WATER STAND"}},
+            {"id":"0062","name":{"value":"SOUTHAMPTON"}},
+            {"id":"0063A","name":{"value":"WARSASH"}},
+            {"id":"0014E","name":{"value":"Jupiter Point"}},
+            {"id":"0053B","name":{"value":"Bembridge Approaches"}},
+            {"id":"0054","name":{"value":"Bembridge Harbour"}},
+            {"id":"0060","name":{"value":"COWES"}},
+            {"id":"0048","name":{"value":"Freshwater Bay"}},
+            {"id":"0060B","name":{"value":"Newport"}},
+            {"id":"0058","name":{"value":"Ryde"}},
+            {"id":"0053","name":{"value":"Sandown"}},
+            {"id":"0046","name":{"value":"Totland Bay"}},
+            {"id":"0051","name":{"value":"Ventnor"}},
+            {"id":"0108B","name":{"value":"Bartlett Creek"}},
+            {"id":"0109E","name":{"value":"Allington Lock"}},
+            {"id":"0129A","name":{"value":"Bramble Creek"}},
+            {"id":"0102A","name":{"value":"Broadstairs"}},
+            {"id":"0109","name":{"value":"Chatham"}},
+            {"id":"0098","name":{"value":"Deal"}},
+            {"id":"0089","name":{"value":"DOVER"}},
+            {"id":"0087","name":{"value":"Dungeness"}},
+            {"id":"0107","name":{"value":"Faversham"}},
+            {"id":"0088","name":{"value":"Folkestone"}},
+            {"id":"0111A","name":{"value":"Gravesend"}},
+            {"id":"0104","name":{"value":"Herne Bay"}},
+            {"id":"0103","name":{"value":"MARGATE"}},
+            {"id":"0109D","name":{"value":"New Hythe"}},
+            {"id":"0102","name":{"value":"RAMSGATE"}},
+            {"id":"0099","name":{"value":"Richborough"}},
+            {"id":"0109B","name":{"value":"Rochester"}},
+            {"id":"0108","name":{"value":"SHEERNESS"}},
+            {"id":"0116A","name":{"value":"Shivering Sand"}},
+            {"id":"0109A","name":{"value":"Upnor"}},
+            {"id":"0105","name":{"value":"Whitstable Approaches"}},
+            {"id":"0109C","name":{"value":"Wouldham"}},
+            {"id":"0445","name":{"value":"Blackpool"}},
+            {"id":"0444","name":{"value":"Fleetwood"}},
+            {"id":"0442","name":{"value":"Glasson Dock"}},
+            {"id":"0439B","name":{"value":"Haws Point"}},
+            {"id":"0441","name":{"value":"Heysham"}},
+            {"id":"0442A","name":{"value":"Lancaster"}},
+            {"id":"0440B","name":{"value":"Morecambe"}},
+            {"id":"0446","name":{"value":"Preston"}},
+            {"id":"0443","name":{"value":"Wyre Lighthouse"}},
+            {"id":"0166","name":{"value":"BOSTON"}},
+            {"id":"0171A","name":{"value":"Bull Sand Fort"}},
+            {"id":"0177","name":{"value":"Burton Stather"}},
+            {"id":"0177A","name":{"value":"FLIXBOROUGH WHARF"}},
+            {"id":"0176","name":{"value":"Humber Bridge"}},
+            {"id":"0173","name":{"value":"IMMINGHAM"}},
+            {"id":"0178","name":{"value":"Keadby"}},
+            {"id":"0164B","name":{"value":"Lawyer's Creek"}},
+            {"id":"0163","name":{"value":"Outer Westmark Knock"}},
+            {"id":"0178A","name":{"value":"Owston Ferry"}},
+            {"id":"0164","name":{"value":"Port Sutton Bridge"}},
+            {"id":"0167","name":{"value":"Skegness"}},
+            {"id":"0163A","name":{"value":"Wisbech Cut"}},
+            {"id":"0448","name":{"value":"Formby"}},
+            {"id":"0452A","name":{"value":"Garston"}},
+            {"id":"0461","name":{"value":"Hilbre Island"}},
+            {"id":"0451","name":{"value":"LIVERPOOL"}},
+            {"id":"0447","name":{"value":"Southport"}},
+            {"id":"0155A","name":{"value":"Blakeney"}},
+            {"id":"0155","name":{"value":"Blakeney Bar"}},
+            {"id":"0158","name":{"value":"Burnham"}},
+            {"id":"0143","name":{"value":"Caister-On-Sea"}},
+            {"id":"0154","name":{"value":"Cromer"}},
+            {"id":"0142A","name":{"value":"Great Yarmouth"}},
+            {"id":"0142","name":{"value":"GORLESTON-ON-SEA"}},
+            {"id":"0161","name":{"value":"Hunstanton"}},
+            {"id":"0162","name":{"value":"King's Lynn"}},
+            {"id":"0130","name":{"value":"Sunk Head"}},
+            {"id":"0027B","name":{"value":"Turf Lock"}},
+            {"id":"0157","name":{"value":"Wells Bar"}},
+            {"id":"0144","name":{"value":"Winterton-On-Sea"}},
+            {"id":"0045","name":{"value":"Yarmouth"}},
+            {"id":"0182","name":{"value":"Filey Bay"}},
+            {"id":"0186","name":{"value":"Middlesbrough"}},
+            {"id":"0183","name":{"value":"Scarborough"}},
+            {"id":"0187","name":{"value":"Newport Bridge"}},
+            {"id":"0184","name":{"value":"Whitby"}},
+            {"id":"0026B","name":{"value":"Exmouth"}},
+            {"id":"0053A","name":{"value":"Foreland"}},
+            {"id":"0106","name":{"value":"Grovehurst Jetty"}},
+            {"id":"0439C","name":{"value":"Halfway Shoal"}},
+            {"id":"0172A","name":{"value":"HUMBER SEA TERMINAL"}},
+            {"id":"0168","name":{"value":"Inner Dowsing Light"}},
+            {"id":"0519","name":{"value":"Inward Rocks"}},
+            {"id":"0139A","name":{"value":"Minsmere Sluice"}},
+            {"id":"0520","name":{"value":"Narlwood Rocks"}},
+            {"id":"0136","name":{"value":"Orford Haven Bar"}},
+            {"id":"0185","name":{"value":"RIVER TEES ENTRANCE"}},
+            {"id":"0452","name":{"value":"Seacombe"}},
+            {"id":"0043","name":{"value":"Stansore Point"}},
+            {"id":"0171B","name":{"value":"Sunk Dredged Channel"}},
+            {"id":"0165","name":{"value":"Tabs Head"}},
+            {"id":"0206","name":{"value":"Amble"}},
+            {"id":"0209","name":{"value":"Berwick"}},
+            {"id":"0204","name":{"value":"BLYTH"}},
+            {"id":"0205","name":{"value":"Coquet Island"}},
+            {"id":"0208","name":{"value":"Holy Island"}},
+            {"id":"0207","name":{"value":"North Sunderland"}},
+            {"id":"0060A","name":{"value":"Folly Inn"}},
+            {"id":"0529","name":{"value":"Bridgwater"}},
+            {"id":"0528","name":{"value":"Burnham-On-Sea"}},
+            {"id":"0525","name":{"value":"Clevedon"}},
+            {"id":"0526","name":{"value":"English And Welsh Grounds"}},
+            {"id":"0530","name":{"value":"Hinkley Point"}},
+            {"id":"0532","name":{"value":"Minehead"}},
+            {"id":"0533","name":{"value":"Porlock Bay"}},
+            {"id":"0524A","name":{"value":"Portishead"}},
+            {"id":"0117","name":{"value":"S.E. Long Sand"}},
+            {"id":"0525A","name":{"value":"St. Thomas's Head"}},
+            {"id":"0531","name":{"value":"Watchet"}},
+            {"id":"0157A","name":{"value":"Wells"}},
+            {"id":"0161A","name":{"value":"West Stones"}},
+            {"id":"0527","name":{"value":"Weston-Super-Mare"}},
+            {"id":"0139","name":{"value":"Aldeburgh"}},
+            {"id":"0135","name":{"value":"Bawdsey"}},
+            {"id":"0133A","name":{"value":"FELIXSTOWE PIER"}},
+            {"id":"0136C","name":{"value":"Iken Cliffs"}},
+            {"id":"0133","name":{"value":"Ipswich"}},
+            {"id":"0141","name":{"value":"LOWESTOFT"}},
+            {"id":"0137","name":{"value":"Orford Ness"}},
+            {"id":"0136A","name":{"value":"Orford Quay"}},
+            {"id":"0136B","name":{"value":"Slaughden Quay"}},
+            {"id":"0140","name":{"value":"Southwold"}},
+            {"id":"0134A","name":{"value":"Woodbridge"}},
+            {"id":"0134","name":{"value":"Woodbridge Haven"}},
+            {"id":"0115","name":{"value":"Hammersmith Bridge"}},
+            {"id":"0115A","name":{"value":"Kew Bridge"}},
+            {"id":"0116","name":{"value":"Richmond Lock"}},
+            {"id":"0203","name":{"value":"Newcastle-Upon-Tyne"}},
+            {"id":"0202","name":{"value":"NORTH SHIELDS"}},
+            {"id":"0190","name":{"value":"SUNDERLAND"}},
+            {"id":"0074B","name":{"value":"Arundel"}},
+            {"id":"0073","name":{"value":"Bognor Regis"}},
+            {"id":"0068B","name":{"value":"Bosham"}},
+            {"id":"0068","name":{"value":"CHICHESTER HARBOUR"}},
+            {"id":"0068D","name":{"value":"Dell Quay"}},
+            {"id":"0068C","name":{"value":"Itchenor"}},
+            {"id":"0074","name":{"value":"Littlehampton"}},
+            {"id":"0070","name":{"value":"Nab Tower"}},
+            {"id":"0072","name":{"value":"Pagham"}},
+            {"id":"0069","name":{"value":"Selsey Bill"}},
+            {"id":"0081","name":{"value":"SHOREHAM"}},
+            {"id":"0075","name":{"value":"Worthing"}}
           ],
           "name": "TidalStationsType"
         },
         {
           "values": [
-            {
-              "name": {
-                "value": "Gloucstershire"
-              }
-            },
-            {
-              "name": {
-                "value": "Essex"
-              }
-            },
-            {
-              "name": {
-                "value": "East Sussex"
-              }
-            },
-            {
-              "name": {
-                "value": "East Riding of Yorkshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Bristol"
-              }
-            },
             {
               "name": {
                 "value": "Buckinghamshire"
@@ -991,6 +1126,121 @@
             {
               "name": {
                 "value": "Dorset"
+              }
+            },
+            {
+              "name": {
+                "value": "East Riding of Yorkshire"
+              }
+            },
+            {
+              "name": {
+                "value": "East Sussex"
+              }
+            },
+            {
+              "name": {
+                "value": "East Riding of Yorkshire"
+              }
+            },
+            {
+              "name": {
+                "value": "Gloucstershire"
+              }
+            },
+            {
+              "name": {
+                "value": "Greater London"
+              }
+            },
+            {
+              "name": {
+                "value": "Hampshire"
+              }
+            },
+            {
+              "name": {
+                "value": "Hertfordshire"
+              }
+            },
+            {
+              "name": {
+                "value": "Isle of Wight"
+              }
+            },
+            {
+              "name": {
+                "value": "Kent"
+              }
+            },
+            {
+              "name": {
+                "value": "Lancashire"
+              }
+            },
+            {
+              "name": {
+                "value": "Lincolnshire"
+              }
+            },
+            {
+              "name": {
+                "value": "Merseyside"
+              }
+            },
+            {
+              "name": {
+                "value": "Norfolk"
+              }
+            },
+            {
+              "name": {
+                "value": "North Yorkshire"
+              }
+            },
+            {
+              "name": {
+                "value": "Northamptonshire"
+              }
+            },
+            {
+              "name": {
+                "value": "Northumberland"
+              }
+            },
+            {
+              "name": {
+                "value": "Oxfordshire"
+              }
+            },
+            {
+              "name": {
+                "value": "Somerset"
+              }
+            },
+            {
+              "name": {
+                "value": "Suffolk"
+              }
+            },
+            {
+              "name": {
+                "value": "Surrey"
+              }
+            },
+            {
+              "name": {
+                "value": "Tyne and Wear"
+              }
+            },
+            {
+              "name": {
+                "value": "West Sussex"
+              }
+            },
+            {
+              "name": {
+                "value": "Worcestershire"
               }
             }
           ],
@@ -1062,7 +1312,7 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "The available counties are, Bristol, Buckinghamshire, Cambridgeshire, Cheshire, Cornwall, County Durham, Cumberland, Devon and Dorset. Try again."
+            "value": "The available counties are those in England. Try again."
           }
         ]
       },
@@ -1071,7 +1321,7 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "The available counties are, Cornwall, just say the name of the county you want?"
+            "value": "The available counties are those in England, just say the name of the county you want?"
           }
         ]
       },
