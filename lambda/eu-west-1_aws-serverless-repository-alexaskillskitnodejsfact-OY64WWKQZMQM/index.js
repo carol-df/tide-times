@@ -120,7 +120,7 @@ const GetTidalStationsHandler = {
     const request = handlerInput.requestEnvelope.request;
     return request.type === 'IntentRequest'
       && request.intent.name === 'GetTidalStationsIntent'
-            || handlerInput.requestEnvelope.request.type === 'Alexa.Presentation.APL.UserEvent';
+                 || handlerInput.requestEnvelope.request.type === 'Alexa.Presentation.APL.UserEvent';
   },
   async handle(handlerInput) {
     const updatedIntent = handlerInput.requestEnvelope.request.intent;
@@ -222,7 +222,7 @@ const GetTidalStationsHandler = {
         case 'NORTH YORKSHIRE':
           COUNTY_STATIONS = NYORKS_STATIONS;
           break;
-        case 'NORTHAMPTON':
+        case 'NORTHAMPTONSHIRE':
           COUNTY_STATIONS = NHAMP_STATIONS;
           break;
         case 'NORTHUMBERLAND':
