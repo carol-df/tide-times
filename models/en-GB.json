@@ -1,1339 +1,2140 @@
 {
   "interactionModel": {
-    "languageModel": {
-      "invocationName": "tide times",
-      "intents": [
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        },
-        {
-          "name": "GetTidalDataIntent",
-          "slots": [
-            {
-              "name": "location",
-              "type": "TidalStationsType",
-              "samples": [
-                "{location}"
-              ]
-            }
+      "languageModel": {
+          "invocationName": "tide times",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "GetTidalDataIntent",
+                  "slots": [
+                      {
+                          "name": "location",
+                          "type": "TidalStationsType",
+                          "samples": [
+                              "{location}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "ask Tide Times for times in {location}",
+                      "ask Tide Times what are the times at {location}",
+                      "ask Tide Times what are the times in {location}",
+                      "ask Tide Times what are the tides at {location}",
+                      "ask tide times for tide times at {location} ",
+                      "ask tide times for tide times in {location} ",
+                      "What are the tides in {location}"
+                  ]
+              },
+              {
+                  "name": "GetTidalStationsIntent",
+                  "slots": [
+                      {
+                          "name": "county",
+                          "type": "Counties",
+                          "samples": [
+                              "{county}"
+                          ]
+                      }
+                  ],
+                  "samples": [
+                      "ask tide times what are the stations in {county}",
+                      "ask tide times for stations in {county}",
+                      "ask tide times for  locations in {county}"
+                  ]
+              },
+              {
+                  "name": "AMAZON.MoreIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateSettingsIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NextIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PageUpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PageDownIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.PreviousIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ScrollRightIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ScrollDownIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ScrollLeftIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.ScrollUpIntent",
+                  "samples": []
+              }
           ],
-          "samples": [
-            "ask Tide Times for times in {location}",
-            "ask Tide Times what are the times at {location}",
-            "ask Tide Times what are the times in {location}",
-            "ask Tide Times what are the tides at {location}",
-            "ask tide times for tide times at {location} ",
-            "ask tide times for tide times in {location} ",
-            "What are the tides in {location}"
+          "types": [
+              {
+                  "name": "TidalStationsType",
+                  "values": [
+                      {
+                          "id": "0544",
+                          "name": {
+                              "value": "Boscastle"
+                          }
+                      },
+                      {
+                          "id": "0543",
+                          "name": {
+                              "value": "Bude"
+                          }
+                      },
+                      {
+                          "id": "0547A",
+                          "name": {
+                              "value": "Cape Cornwall"
+                          }
+                      },
+                      {
+                          "id": "0014B",
+                          "name": {
+                              "value": "Cargreen"
+                          }
+                      },
+                      {
+                          "id": "0014C",
+                          "name": {
+                              "value": "Cotehele Quay"
+                          }
+                      },
+                      {
+                          "id": "0004",
+                          "name": {
+                              "value": "Coverack"
+                          }
+                      },
+                      {
+                          "id": "0005",
+                          "name": {
+                              "value": "Falmouth"
+                          }
+                      },
+                      {
+                          "id": "0008",
+                          "name": {
+                              "value": "Fowey"
+                          }
+                      },
+                      {
+                          "id": "0004A",
+                          "name": {
+                              "value": "Helford River"
+                          }
+                      },
+                      {
+                          "id": "0011",
+                          "name": {
+                              "value": "Looe"
+                          }
+                      },
+                      {
+                          "id": "0008A",
+                          "name": {
+                              "value": "Lostwithiel"
+                          }
+                      },
+                      {
+                          "id": "0003",
+                          "name": {
+                              "value": "Lizard Point"
+                          }
+                      },
+                      {
+                          "id": "0007",
+                          "name": {
+                              "value": "Mevagissey"
+                          }
+                      },
+                      {
+                          "id": "0546",
+                          "name": {
+                              "value": "Newquay"
+                          }
+                      },
+                      {
+                          "id": "0545",
+                          "name": {
+                              "value": "Padstow"
+                          }
+                      },
+                      {
+                          "id": "0007A",
+                          "name": {
+                              "value": "Par"
+                          }
+                      },
+                      {
+                          "id": "0002",
+                          "name": {
+                              "value": "Penzance"
+                          }
+                      },
+                      {
+                          "id": "0546A",
+                          "name": {
+                              "value": "Perranporth"
+                          }
+                      },
+                      {
+                          "id": "0544A",
+                          "name": {
+                              "value": "Port Issac"
+                          }
+                      },
+                      {
+                          "id": "0002A",
+                          "name": {
+                              "value": "Porthleven"
+                          }
+                      },
+                      {
+                          "id": "0014A",
+                          "name": {
+                              "value": "Saltash"
+                          }
+                      },
+                      {
+                          "id": "0548",
+                          "name": {
+                              "value": "Sennen Cove"
+                          }
+                      },
+                      {
+                          "id": "0014F",
+                          "name": {
+                              "value": "St. Germans"
+                          }
+                      },
+                      {
+                          "id": "0547",
+                          "name": {
+                              "value": "St. Ives"
+                          }
+                      },
+                      {
+                          "id": "0005A",
+                          "name": {
+                              "value": "Truro"
+                          }
+                      },
+                      {
+                          "id": "0545A",
+                          "name": {
+                              "value": "Wadebridge"
+                          }
+                      },
+                      {
+                          "id": "0012",
+                          "name": {
+                              "value": "Whitsand Bay"
+                          }
+                      },
+                      {
+                          "id": "0524",
+                          "name": {
+                              "value": "Cumberland Basin Entrance"
+                          }
+                      },
+                      {
+                          "id": "0523",
+                          "name": {
+                              "value": "AVONMOUTH"
+                          }
+                      },
+                      {
+                          "id": "0523B",
+                          "name": {
+                              "value": "Sea Mills"
+                          }
+                      },
+                      {
+                          "id": "0523A",
+                          "name": {
+                              "value": "Shirehampton"
+                          }
+                      },
+                      {
+                          "id": "0521",
+                          "name": {
+                              "value": "White House"
+                          }
+                      },
+                      {
+                          "id": "0066",
+                          "name": {
+                              "value": "Langstone Harbour"
+                          }
+                      },
+                      {
+                          "id": "0164A",
+                          "name": {
+                              "value": "Wisbech"
+                          }
+                      },
+                      {
+                          "id": "0108A",
+                          "name": {
+                              "value": "Bee Ness"
+                          }
+                      },
+                      {
+                          "id": "0462",
+                          "name": {
+                              "value": "Chester"
+                          }
+                      },
+                      {
+                          "id": "0108C",
+                          "name": {
+                              "value": "Darnett Ness"
+                          }
+                      },
+                      {
+                          "id": "0456A",
+                          "name": {
+                              "value": "Fiddler's Ferry"
+                          }
+                      },
+                      {
+                          "id": "0456",
+                          "name": {
+                              "value": "Widnes"
+                          }
+                      },
+                      {
+                          "id": "0440A",
+                          "name": {
+                              "value": "Arnside"
+                          }
+                      },
+                      {
+                          "id": "0439",
+                          "name": {
+                              "value": "BARROW"
+                          }
+                      },
+                      {
+                          "id": "0437",
+                          "name": {
+                              "value": "Duddon Bar"
+                          }
+                      },
+                      {
+                          "id": "0455",
+                          "name": {
+                              "value": "Hale Head"
+                          }
+                      },
+                      {
+                          "id": "0433",
+                          "name": {
+                              "value": "Maryport"
+                          }
+                      },
+                      {
+                          "id": "0439A",
+                          "name": {
+                              "value": "Roa Island"
+                          }
+                      },
+                      {
+                          "id": "0432",
+                          "name": {
+                              "value": "Silloth"
+                          }
+                      },
+                      {
+                          "id": "0436",
+                          "name": {
+                              "value": "Tarn Point"
+                          }
+                      },
+                      {
+                          "id": "0440",
+                          "name": {
+                              "value": "Ulverston"
+                          }
+                      },
+                      {
+                          "id": "0435",
+                          "name": {
+                              "value": "Whitehaven"
+                          }
+                      },
+                      {
+                          "id": "0434",
+                          "name": {
+                              "value": "Workington"
+                          }
+                      },
+                      {
+                          "id": "00188",
+                          "name": {
+                              "value": "Hartlepool"
+                          }
+                      },
+                      {
+                          "id": "0189",
+                          "name": {
+                              "value": "Seaham"
+                          }
+                      },
+                      {
+                          "id": "0536",
+                          "name": {
+                              "value": "Appledore"
+                          }
+                      },
+                      {
+                          "id": "0539",
+                          "name": {
+                              "value": "Barnstaple"
+                          }
+                      },
+                      {
+                          "id": "0540",
+                          "name": {
+                              "value": "Bideford"
+                          }
+                      },
+                      {
+                          "id": "0015A",
+                          "name": {
+                              "value": "Bovisand Pier"
+                          }
+                      },
+                      {
+                          "id": "0541",
+                          "name": {
+                              "value": "Clovelly"
+                          }
+                      },
+                      {
+                          "id": "0110A",
+                          "name": {
+                              "value": "CORYTON"
+                          }
+                      },
+                      {
+                          "id": "0023",
+                          "name": {
+                              "value": "DARTMOUTH"
+                          }
+                      },
+                      {
+                          "id": "0014",
+                          "name": {
+                              "value": "DEVONPORT"
+                          }
+                      },
+                      {
+                          "id": "0027",
+                          "name": {
+                              "value": "Exmouth Dock"
+                          }
+                      },
+                      {
+                          "id": "0538",
+                          "name": {
+                              "value": "Fremington"
+                          }
+                      },
+                      {
+                          "id": "0023A",
+                          "name": {
+                              "value": "Greenway Quay"
+                          }
+                      },
+                      {
+                          "id": "0535",
+                          "name": {
+                              "value": "Ilfracombe"
+                          }
+                      },
+                      {
+                          "id": "0014D",
+                          "name": {
+                              "value": "Lopwell"
+                          }
+                      },
+                      {
+                          "id": "0542",
+                          "name": {
+                              "value": "Lundy"
+                          }
+                      },
+                      {
+                          "id": "0534",
+                          "name": {
+                              "value": "Lynmouth"
+                          }
+                      },
+                      {
+                          "id": "0017",
+                          "name": {
+                              "value": "River Yealm Entrance"
+                          }
+                      },
+                      {
+                          "id": "0020",
+                          "name": {
+                              "value": "Salcombe"
+                          }
+                      },
+                      {
+                          "id": "0027A",
+                          "name": {
+                              "value": "Starcross"
+                          }
+                      },
+                      {
+                          "id": "0021",
+                          "name": {
+                              "value": "Start Point"
+                          }
+                      },
+                      {
+                          "id": "0023B",
+                          "name": {
+                              "value": "Stoke Gabriel"
+                          }
+                      },
+                      {
+                          "id": "0026",
+                          "name": {
+                              "value": "Teignmouth Approaches"
+                          }
+                      },
+                      {
+                          "id": "0026A",
+                          "name": {
+                              "value": "New Quay"
+                          }
+                      },
+                      {
+                          "id": "0027C",
+                          "name": {
+                              "value": "Topsham"
+                          }
+                      },
+                      {
+                          "id": "0025",
+                          "name": {
+                              "value": "TORQUAY"
+                          }
+                      },
+                      {
+                          "id": "0023C",
+                          "name": {
+                              "value": "Totnes"
+                          }
+                      },
+                      {
+                          "id": "0015",
+                          "name": {
+                              "value": "Turnchapel"
+                          }
+                      },
+                      {
+                          "id": "0121",
+                          "name": {
+                              "value": "Whitaker Beacon"
+                          }
+                      },
+                      {
+                          "id": "0537",
+                          "name": {
+                              "value": "Yelland Marsh"
+                          }
+                      },
+                      {
+                          "id": "0037",
+                          "name": {
+                              "value": "Bournemouth"
+                          }
+                      },
+                      {
+                          "id": "0029",
+                          "name": {
+                              "value": "Bridport"
+                          }
+                      },
+                      {
+                          "id": "0030",
+                          "name": {
+                              "value": "Chesil Beach"
+                          }
+                      },
+                      {
+                          "id": "0031",
+                          "name": {
+                              "value": "Chesil Cove"
+                          }
+                      },
+                      {
+                          "id": "0038",
+                          "name": {
+                              "value": "Christchurch Entrance"
+                          }
+                      },
+                      {
+                          "id": "0038A",
+                          "name": {
+                              "value": "Christchurch Quay"
+                          }
+                      },
+                      {
+                          "id": "0038B",
+                          "name": {
+                              "value": "Tuckton"
+                          }
+                      },
+                      {
+                          "id": "0036D",
+                          "name": {
+                              "value": "Cleavel Point"
+                          }
+                      },
+                      {
+                          "id": "0034",
+                          "name": {
+                              "value": "Lulworth Cove"
+                          }
+                      },
+                      {
+                          "id": "0028",
+                          "name": {
+                              "value": "Lyme Regis"
+                          }
+                      },
+                      {
+                          "id": "0034A",
+                          "name": {
+                              "value": "Mupe Bay"
+                          }
+                      },
+                      {
+                          "id": "0036",
+                          "name": {
+                              "value": "Poole Entrance"
+                          }
+                      },
+                      {
+                          "id": "0036A",
+                          "name": {
+                              "value": "POOLE HARBOUR"
+                          }
+                      },
+                      {
+                          "id": "0033",
+                          "name": {
+                              "value": "PORTLAND"
+                          }
+                      },
+                      {
+                          "id": "0036B",
+                          "name": {
+                              "value": "Pottery Pier"
+                          }
+                      },
+                      {
+                          "id": "0035",
+                          "name": {
+                              "value": "Swanage"
+                          }
+                      },
+                      {
+                          "id": "0036C",
+                          "name": {
+                              "value": "Wareham"
+                          }
+                      },
+                      {
+                          "id": "0179",
+                          "name": {
+                              "value": "Blacktoft"
+                          }
+                      },
+                      {
+                          "id": "0181",
+                          "name": {
+                              "value": "Bridlington"
+                          }
+                      },
+                      {
+                          "id": "0176A",
+                          "name": {
+                              "value": "Brough"
+                          }
+                      },
+                      {
+                          "id": "0180",
+                          "name": {
+                              "value": "GOOLE"
+                          }
+                      },
+                      {
+                          "id": "0175",
+                          "name": {
+                              "value": "HULL ALBERT DOCK"
+                          }
+                      },
+                      {
+                          "id": "0174A",
+                          "name": {
+                              "value": "Hull Alexandra Dock"
+                          }
+                      },
+                      {
+                          "id": "0174",
+                          "name": {
+                              "value": "HULL KING GEORGE DOCK"
+                          }
+                      },
+                      {
+                          "id": "0171",
+                          "name": {
+                              "value": "SPURN HEAD"
+                          }
+                      },
+                      {
+                          "id": "0082",
+                          "name": {
+                              "value": "Brighton Marina"
+                          }
+                      },
+                      {
+                          "id": "0084",
+                          "name": {
+                              "value": "Eastbourne"
+                          }
+                      },
+                      {
+                          "id": "0085",
+                          "name": {
+                              "value": "Hastings"
+                          }
+                      },
+                      {
+                          "id": "0083",
+                          "name": {
+                              "value": "NEWHAVEN"
+                          }
+                      },
+                      {
+                          "id": "0086",
+                          "name": {
+                              "value": "Rye Approaches"
+                          }
+                      },
+                      {
+                          "id": "0086A",
+                          "name": {
+                              "value": "Rye Harbour"
+                          }
+                      },
+                      {
+                          "id": "0084A",
+                          "name": {
+                              "value": "Sovereign Harbour"
+                          }
+                      },
+                      {
+                          "id": "0122C",
+                          "name": {
+                              "value": "Battlesbridge"
+                          }
+                      },
+                      {
+                          "id": "0123",
+                          "name": {
+                              "value": "Bradwell Waterside"
+                          }
+                      },
+                      {
+                          "id": "0126",
+                          "name": {
+                              "value": "Brightlingsea"
+                          }
+                      },
+                      {
+                          "id": "0122",
+                          "name": {
+                              "value": "BURNHAM-ON-CROUCH"
+                          }
+                      },
+                      {
+                          "id": "0128",
+                          "name": {
+                              "value": "Clacton-On-Sea"
+                          }
+                      },
+                      {
+                          "id": "0127",
+                          "name": {
+                              "value": "Colchester"
+                          }
+                      },
+                      {
+                          "id": "0131",
+                          "name": {
+                              "value": "HARWICH"
+                          }
+                      },
+                      {
+                          "id": "0121A",
+                          "name": {
+                              "value": "Holliwell Point"
+                          }
+                      },
+                      {
+                          "id": "0122B",
+                          "name": {
+                              "value": "Hullbridge"
+                          }
+                      },
+                      {
+                          "id": "0123B",
+                          "name": {
+                              "value": "Maldon"
+                          }
+                      },
+                      {
+                          "id": "0132",
+                          "name": {
+                              "value": "Mistley"
+                          }
+                      },
+                      {
+                          "id": "0122A",
+                          "name": {
+                              "value": "North Fambridge"
+                          }
+                      },
+                      {
+                          "id": "0123A",
+                          "name": {
+                              "value": "Osea Island"
+                          }
+                      },
+                      {
+                          "id": "0121B",
+                          "name": {
+                              "value": "Rochford"
+                          }
+                      },
+                      {
+                          "id": "0110",
+                          "name": {
+                              "value": "Southend-On-Sea"
+                          }
+                      },
+                      {
+                          "id": "0111",
+                          "name": {
+                              "value": "TILBURY"
+                          }
+                      },
+                      {
+                          "id": "0129",
+                          "name": {
+                              "value": "WALTON-ON-THE-NAZE"
+                          }
+                      },
+                      {
+                          "id": "0124",
+                          "name": {
+                              "value": "West Mersea"
+                          }
+                      },
+                      {
+                          "id": "0518",
+                          "name": {
+                              "value": "Beachley"
+                          }
+                      },
+                      {
+                          "id": "0522",
+                          "name": {
+                              "value": "Berkeley"
+                          }
+                      },
+                      {
+                          "id": "0522C",
+                          "name": {
+                              "value": "Epney"
+                          }
+                      },
+                      {
+                          "id": "0522D",
+                          "name": {
+                              "value": "Minsterworth"
+                          }
+                      },
+                      {
+                          "id": "0522A",
+                          "name": {
+                              "value": "Sharpness Dock"
+                          }
+                      },
+                      {
+                          "id": "0001",
+                          "name": {
+                              "value": "ST. MARY'S"
+                          }
+                      },
+                      {
+                          "id": "0522B",
+                          "name": {
+                              "value": "Wellhouse Rock"
+                          }
+                      },
+                      {
+                          "id": "0114",
+                          "name": {
+                              "value": "Albert Bridge"
+                          }
+                      },
+                      {
+                          "id": "0113A",
+                          "name": {
+                              "value": "Chelsea Bridge"
+                          }
+                      },
+                      {
+                          "id": "0113",
+                          "name": {
+                              "value": "LONDON BRIDGE"
+                          }
+                      },
+                      {
+                          "id": "0112",
+                          "name": {
+                              "value": "NORTH WOOLWICH"
+                          }
+                      },
+                      {
+                          "id": "0063",
+                          "name": {
+                              "value": "Redbridge"
+                          }
+                      },
+                      {
+                          "id": "0042",
+                          "name": {
+                              "value": "Bucklers Hard"
+                          }
+                      },
+                      {
+                          "id": "0063B",
+                          "name": {
+                              "value": "Bursledon"
+                          }
+                      },
+                      {
+                          "id": "0061",
+                          "name": {
+                              "value": "Calshot Castle"
+                          }
+                      },
+                      {
+                          "id": "0039",
+                          "name": {
+                              "value": "Hurst Point"
+                          }
+                      },
+                      {
+                          "id": "0064",
+                          "name": {
+                              "value": "Lee-On-The-Solent"
+                          }
+                      },
+                      {
+                          "id": "0040",
+                          "name": {
+                              "value": "LYMINGTON"
+                          }
+                      },
+                      {
+                          "id": "0068A",
+                          "name": {
+                              "value": "Northney"
+                          }
+                      },
+                      {
+                          "id": "0065",
+                          "name": {
+                              "value": "PORTSMOUTH"
+                          }
+                      },
+                      {
+                          "id": "0065A",
+                          "name": {
+                              "value": "PORTSMOUTH HIGH WATER STAND"
+                          }
+                      },
+                      {
+                          "id": "0062",
+                          "name": {
+                              "value": "SOUTHAMPTON"
+                          }
+                      },
+                      {
+                          "id": "0063A",
+                          "name": {
+                              "value": "WARSASH"
+                          }
+                      },
+                      {
+                          "id": "0014E",
+                          "name": {
+                              "value": "Jupiter Point"
+                          }
+                      },
+                      {
+                          "id": "0053B",
+                          "name": {
+                              "value": "Bembridge Approaches"
+                          }
+                      },
+                      {
+                          "id": "0054",
+                          "name": {
+                              "value": "Bembridge Harbour"
+                          }
+                      },
+                      {
+                          "id": "0060",
+                          "name": {
+                              "value": "COWES"
+                          }
+                      },
+                      {
+                          "id": "0048",
+                          "name": {
+                              "value": "Freshwater Bay"
+                          }
+                      },
+                      {
+                          "id": "0060B",
+                          "name": {
+                              "value": "Newport"
+                          }
+                      },
+                      {
+                          "id": "0058",
+                          "name": {
+                              "value": "Ryde"
+                          }
+                      },
+                      {
+                          "id": "0053",
+                          "name": {
+                              "value": "Sandown"
+                          }
+                      },
+                      {
+                          "id": "0046",
+                          "name": {
+                              "value": "Totland Bay"
+                          }
+                      },
+                      {
+                          "id": "0051",
+                          "name": {
+                              "value": "Ventnor"
+                          }
+                      },
+                      {
+                          "id": "0108B",
+                          "name": {
+                              "value": "Bartlett Creek"
+                          }
+                      },
+                      {
+                          "id": "0109E",
+                          "name": {
+                              "value": "Allington Lock"
+                          }
+                      },
+                      {
+                          "id": "0129A",
+                          "name": {
+                              "value": "Bramble Creek"
+                          }
+                      },
+                      {
+                          "id": "0102A",
+                          "name": {
+                              "value": "Broadstairs"
+                          }
+                      },
+                      {
+                          "id": "0109",
+                          "name": {
+                              "value": "Chatham"
+                          }
+                      },
+                      {
+                          "id": "0098",
+                          "name": {
+                              "value": "Deal"
+                          }
+                      },
+                      {
+                          "id": "0089",
+                          "name": {
+                              "value": "DOVER"
+                          }
+                      },
+                      {
+                          "id": "0087",
+                          "name": {
+                              "value": "Dungeness"
+                          }
+                      },
+                      {
+                          "id": "0107",
+                          "name": {
+                              "value": "Faversham"
+                          }
+                      },
+                      {
+                          "id": "0088",
+                          "name": {
+                              "value": "Folkestone"
+                          }
+                      },
+                      {
+                          "id": "0111A",
+                          "name": {
+                              "value": "Gravesend"
+                          }
+                      },
+                      {
+                          "id": "0104",
+                          "name": {
+                              "value": "Herne Bay"
+                          }
+                      },
+                      {
+                          "id": "0103",
+                          "name": {
+                              "value": "MARGATE"
+                          }
+                      },
+                      {
+                          "id": "0109D",
+                          "name": {
+                              "value": "New Hythe"
+                          }
+                      },
+                      {
+                          "id": "0102",
+                          "name": {
+                              "value": "RAMSGATE"
+                          }
+                      },
+                      {
+                          "id": "0099",
+                          "name": {
+                              "value": "Richborough"
+                          }
+                      },
+                      {
+                          "id": "0109B",
+                          "name": {
+                              "value": "Rochester"
+                          }
+                      },
+                      {
+                          "id": "0108",
+                          "name": {
+                              "value": "SHEERNESS"
+                          }
+                      },
+                      {
+                          "id": "0116A",
+                          "name": {
+                              "value": "Shivering Sand"
+                          }
+                      },
+                      {
+                          "id": "0109A",
+                          "name": {
+                              "value": "Upnor"
+                          }
+                      },
+                      {
+                          "id": "0105",
+                          "name": {
+                              "value": "Whitstable Approaches"
+                          }
+                      },
+                      {
+                          "id": "0109C",
+                          "name": {
+                              "value": "Wouldham"
+                          }
+                      },
+                      {
+                          "id": "0445",
+                          "name": {
+                              "value": "Blackpool"
+                          }
+                      },
+                      {
+                          "id": "0444",
+                          "name": {
+                              "value": "Fleetwood"
+                          }
+                      },
+                      {
+                          "id": "0442",
+                          "name": {
+                              "value": "Glasson Dock"
+                          }
+                      },
+                      {
+                          "id": "0439B",
+                          "name": {
+                              "value": "Haws Point"
+                          }
+                      },
+                      {
+                          "id": "0441",
+                          "name": {
+                              "value": "Heysham"
+                          }
+                      },
+                      {
+                          "id": "0442A",
+                          "name": {
+                              "value": "Lancaster"
+                          }
+                      },
+                      {
+                          "id": "0440B",
+                          "name": {
+                              "value": "Morecambe"
+                          }
+                      },
+                      {
+                          "id": "0446",
+                          "name": {
+                              "value": "Preston"
+                          }
+                      },
+                      {
+                          "id": "0443",
+                          "name": {
+                              "value": "Wyre Lighthouse"
+                          }
+                      },
+                      {
+                          "id": "0166",
+                          "name": {
+                              "value": "BOSTON"
+                          }
+                      },
+                      {
+                          "id": "0171A",
+                          "name": {
+                              "value": "Bull Sand Fort"
+                          }
+                      },
+                      {
+                          "id": "0177",
+                          "name": {
+                              "value": "Burton Stather"
+                          }
+                      },
+                      {
+                          "id": "0177A",
+                          "name": {
+                              "value": "FLIXBOROUGH WHARF"
+                          }
+                      },
+                      {
+                          "id": "0176",
+                          "name": {
+                              "value": "Humber Bridge"
+                          }
+                      },
+                      {
+                          "id": "0173",
+                          "name": {
+                              "value": "IMMINGHAM"
+                          }
+                      },
+                      {
+                          "id": "0178",
+                          "name": {
+                              "value": "Keadby"
+                          }
+                      },
+                      {
+                          "id": "0164B",
+                          "name": {
+                              "value": "Lawyer's Creek"
+                          }
+                      },
+                      {
+                          "id": "0163",
+                          "name": {
+                              "value": "Outer Westmark Knock"
+                          }
+                      },
+                      {
+                          "id": "0178A",
+                          "name": {
+                              "value": "Owston Ferry"
+                          }
+                      },
+                      {
+                          "id": "0164",
+                          "name": {
+                              "value": "Port Sutton Bridge"
+                          }
+                      },
+                      {
+                          "id": "0167",
+                          "name": {
+                              "value": "Skegness"
+                          }
+                      },
+                      {
+                          "id": "0163A",
+                          "name": {
+                              "value": "Wisbech Cut"
+                          }
+                      },
+                      {
+                          "id": "0448",
+                          "name": {
+                              "value": "Formby"
+                          }
+                      },
+                      {
+                          "id": "0452A",
+                          "name": {
+                              "value": "Garston"
+                          }
+                      },
+                      {
+                          "id": "0461",
+                          "name": {
+                              "value": "Hilbre Island"
+                          }
+                      },
+                      {
+                          "id": "0451",
+                          "name": {
+                              "value": "LIVERPOOL"
+                          }
+                      },
+                      {
+                          "id": "0447",
+                          "name": {
+                              "value": "Southport"
+                          }
+                      },
+                      {
+                          "id": "0155A",
+                          "name": {
+                              "value": "Blakeney"
+                          }
+                      },
+                      {
+                          "id": "0155",
+                          "name": {
+                              "value": "Blakeney Bar"
+                          }
+                      },
+                      {
+                          "id": "0158",
+                          "name": {
+                              "value": "Burnham"
+                          }
+                      },
+                      {
+                          "id": "0143",
+                          "name": {
+                              "value": "Caister-On-Sea"
+                          }
+                      },
+                      {
+                          "id": "0154",
+                          "name": {
+                              "value": "Cromer"
+                          }
+                      },
+                      {
+                          "id": "0142A",
+                          "name": {
+                              "value": "Great Yarmouth"
+                          }
+                      },
+                      {
+                          "id": "0142",
+                          "name": {
+                              "value": "GORLESTON-ON-SEA"
+                          }
+                      },
+                      {
+                          "id": "0161",
+                          "name": {
+                              "value": "Hunstanton"
+                          }
+                      },
+                      {
+                          "id": "0162",
+                          "name": {
+                              "value": "King's Lynn"
+                          }
+                      },
+                      {
+                          "id": "0130",
+                          "name": {
+                              "value": "Sunk Head"
+                          }
+                      },
+                      {
+                          "id": "0027B",
+                          "name": {
+                              "value": "Turf Lock"
+                          }
+                      },
+                      {
+                          "id": "0157",
+                          "name": {
+                              "value": "Wells Bar"
+                          }
+                      },
+                      {
+                          "id": "0144",
+                          "name": {
+                              "value": "Winterton-On-Sea"
+                          }
+                      },
+                      {
+                          "id": "0045",
+                          "name": {
+                              "value": "Yarmouth"
+                          }
+                      },
+                      {
+                          "id": "0182",
+                          "name": {
+                              "value": "Filey Bay"
+                          }
+                      },
+                      {
+                          "id": "0186",
+                          "name": {
+                              "value": "Middlesbrough"
+                          }
+                      },
+                      {
+                          "id": "0183",
+                          "name": {
+                              "value": "Scarborough"
+                          }
+                      },
+                      {
+                          "id": "0187",
+                          "name": {
+                              "value": "Newport Bridge"
+                          }
+                      },
+                      {
+                          "id": "0184",
+                          "name": {
+                              "value": "Whitby"
+                          }
+                      },
+                      {
+                          "id": "0026B",
+                          "name": {
+                              "value": "Exmouth"
+                          }
+                      },
+                      {
+                          "id": "0053A",
+                          "name": {
+                              "value": "Foreland"
+                          }
+                      },
+                      {
+                          "id": "0106",
+                          "name": {
+                              "value": "Grovehurst Jetty"
+                          }
+                      },
+                      {
+                          "id": "0439C",
+                          "name": {
+                              "value": "Halfway Shoal"
+                          }
+                      },
+                      {
+                          "id": "0172A",
+                          "name": {
+                              "value": "HUMBER SEA TERMINAL"
+                          }
+                      },
+                      {
+                          "id": "0168",
+                          "name": {
+                              "value": "Inner Dowsing Light"
+                          }
+                      },
+                      {
+                          "id": "0519",
+                          "name": {
+                              "value": "Inward Rocks"
+                          }
+                      },
+                      {
+                          "id": "0139A",
+                          "name": {
+                              "value": "Minsmere Sluice"
+                          }
+                      },
+                      {
+                          "id": "0520",
+                          "name": {
+                              "value": "Narlwood Rocks"
+                          }
+                      },
+                      {
+                          "id": "0136",
+                          "name": {
+                              "value": "Orford Haven Bar"
+                          }
+                      },
+                      {
+                          "id": "0185",
+                          "name": {
+                              "value": "RIVER TEES ENTRANCE"
+                          }
+                      },
+                      {
+                          "id": "0452",
+                          "name": {
+                              "value": "Seacombe"
+                          }
+                      },
+                      {
+                          "id": "0043",
+                          "name": {
+                              "value": "Stansore Point"
+                          }
+                      },
+                      {
+                          "id": "0171B",
+                          "name": {
+                              "value": "Sunk Dredged Channel"
+                          }
+                      },
+                      {
+                          "id": "0165",
+                          "name": {
+                              "value": "Tabs Head"
+                          }
+                      },
+                      {
+                          "id": "0206",
+                          "name": {
+                              "value": "Amble"
+                          }
+                      },
+                      {
+                          "id": "0209",
+                          "name": {
+                              "value": "Berwick"
+                          }
+                      },
+                      {
+                          "id": "0204",
+                          "name": {
+                              "value": "BLYTH"
+                          }
+                      },
+                      {
+                          "id": "0205",
+                          "name": {
+                              "value": "Coquet Island"
+                          }
+                      },
+                      {
+                          "id": "0208",
+                          "name": {
+                              "value": "Holy Island"
+                          }
+                      },
+                      {
+                          "id": "0207",
+                          "name": {
+                              "value": "North Sunderland"
+                          }
+                      },
+                      {
+                          "id": "0060A",
+                          "name": {
+                              "value": "Folly Inn"
+                          }
+                      },
+                      {
+                          "id": "0529",
+                          "name": {
+                              "value": "Bridgwater"
+                          }
+                      },
+                      {
+                          "id": "0528",
+                          "name": {
+                              "value": "Burnham-On-Sea"
+                          }
+                      },
+                      {
+                          "id": "0525",
+                          "name": {
+                              "value": "Clevedon"
+                          }
+                      },
+                      {
+                          "id": "0526",
+                          "name": {
+                              "value": "English And Welsh Grounds"
+                          }
+                      },
+                      {
+                          "id": "0530",
+                          "name": {
+                              "value": "Hinkley Point"
+                          }
+                      },
+                      {
+                          "id": "0532",
+                          "name": {
+                              "value": "Minehead"
+                          }
+                      },
+                      {
+                          "id": "0533",
+                          "name": {
+                              "value": "Porlock Bay"
+                          }
+                      },
+                      {
+                          "id": "0524A",
+                          "name": {
+                              "value": "Portishead"
+                          }
+                      },
+                      {
+                          "id": "0117",
+                          "name": {
+                              "value": "S.E. Long Sand"
+                          }
+                      },
+                      {
+                          "id": "0525A",
+                          "name": {
+                              "value": "St. Thomas's Head"
+                          }
+                      },
+                      {
+                          "id": "0531",
+                          "name": {
+                              "value": "Watchet"
+                          }
+                      },
+                      {
+                          "id": "0157A",
+                          "name": {
+                              "value": "Wells"
+                          }
+                      },
+                      {
+                          "id": "0161A",
+                          "name": {
+                              "value": "West Stones"
+                          }
+                      },
+                      {
+                          "id": "0527",
+                          "name": {
+                              "value": "Weston-Super-Mare"
+                          }
+                      },
+                      {
+                          "id": "0139",
+                          "name": {
+                              "value": "Aldeburgh"
+                          }
+                      },
+                      {
+                          "id": "0135",
+                          "name": {
+                              "value": "Bawdsey"
+                          }
+                      },
+                      {
+                          "id": "0133A",
+                          "name": {
+                              "value": "FELIXSTOWE PIER"
+                          }
+                      },
+                      {
+                          "id": "0136C",
+                          "name": {
+                              "value": "Iken Cliffs"
+                          }
+                      },
+                      {
+                          "id": "0133",
+                          "name": {
+                              "value": "Ipswich"
+                          }
+                      },
+                      {
+                          "id": "0141",
+                          "name": {
+                              "value": "LOWESTOFT"
+                          }
+                      },
+                      {
+                          "id": "0137",
+                          "name": {
+                              "value": "Orford Ness"
+                          }
+                      },
+                      {
+                          "id": "0136A",
+                          "name": {
+                              "value": "Orford Quay"
+                          }
+                      },
+                      {
+                          "id": "0136B",
+                          "name": {
+                              "value": "Slaughden Quay"
+                          }
+                      },
+                      {
+                          "id": "0140",
+                          "name": {
+                              "value": "Southwold"
+                          }
+                      },
+                      {
+                          "id": "0134A",
+                          "name": {
+                              "value": "Woodbridge"
+                          }
+                      },
+                      {
+                          "id": "0134",
+                          "name": {
+                              "value": "Woodbridge Haven"
+                          }
+                      },
+                      {
+                          "id": "0115",
+                          "name": {
+                              "value": "Hammersmith Bridge"
+                          }
+                      },
+                      {
+                          "id": "0115A",
+                          "name": {
+                              "value": "Kew Bridge"
+                          }
+                      },
+                      {
+                          "id": "0116",
+                          "name": {
+                              "value": "Richmond Lock"
+                          }
+                      },
+                      {
+                          "id": "0203",
+                          "name": {
+                              "value": "Newcastle-Upon-Tyne"
+                          }
+                      },
+                      {
+                          "id": "0202",
+                          "name": {
+                              "value": "NORTH SHIELDS"
+                          }
+                      },
+                      {
+                          "id": "0190",
+                          "name": {
+                              "value": "SUNDERLAND"
+                          }
+                      },
+                      {
+                          "id": "0074B",
+                          "name": {
+                              "value": "Arundel"
+                          }
+                      },
+                      {
+                          "id": "0073",
+                          "name": {
+                              "value": "Bognor Regis"
+                          }
+                      },
+                      {
+                          "id": "0068B",
+                          "name": {
+                              "value": "Bosham"
+                          }
+                      },
+                      {
+                          "id": "0068",
+                          "name": {
+                              "value": "CHICHESTER HARBOUR"
+                          }
+                      },
+                      {
+                          "id": "0068D",
+                          "name": {
+                              "value": "Dell Quay"
+                          }
+                      },
+                      {
+                          "id": "0068C",
+                          "name": {
+                              "value": "Itchenor"
+                          }
+                      },
+                      {
+                          "id": "0074",
+                          "name": {
+                              "value": "Littlehampton"
+                          }
+                      },
+                      {
+                          "id": "0070",
+                          "name": {
+                              "value": "Nab Tower"
+                          }
+                      },
+                      {
+                          "id": "0072",
+                          "name": {
+                              "value": "Pagham"
+                          }
+                      },
+                      {
+                          "id": "0069",
+                          "name": {
+                              "value": "Selsey Bill"
+                          }
+                      },
+                      {
+                          "id": "0081",
+                          "name": {
+                              "value": "SHOREHAM"
+                          }
+                      },
+                      {
+                          "id": "0075",
+                          "name": {
+                              "value": "Worthing"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "Counties",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Buckinghamshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cambridgeshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cheshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cornwall"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "County Durham"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Cumberland"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Devon"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Dorset"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "East Riding of Yorkshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "East Sussex"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Essex"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Gloucestershire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Greater London"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hampshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Hertfordshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Isle of Wight"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Kent"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lancashire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Lincolnshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Merseyside"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Norfolk"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "North Yorkshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Northamptonshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Northumberland"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Oxfordshire"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Somerset"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Suffolk"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Surrey"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Tyne and Wear"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "West Sussex"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "Worcestershire"
+                          }
+                      }
+                  ]
+              }
           ]
-        },
-        {
-          "name": "GetTidalStationsIntent",
-          "slots": [
-            {
-              "name": "county",
-              "type": "Counties",
-              "samples": [
-                "{county}"
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "GetTidalDataIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "location",
+                          "type": "TidalStationsType",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.220590670923.663829450522"
+                          },
+                          "validations": [
+                              {
+                                  "type": "hasEntityResolutionMatch",
+                                  "prompt": "Slot.Validation.1023217657143.671699939798.104743084609"
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "GetTidalStationsIntent",
+                  "delegationStrategy": "ALWAYS",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "county",
+                          "type": "Counties",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.428401476603.631702789540"
+                          },
+                          "validations": [
+                              {
+                                  "type": "hasEntityResolutionMatch",
+                                  "prompt": "Slot.Validation.1014952757419.815202282794.460636972215"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+      },
+      "prompts": [
+          {
+              "id": "Slot.Validation.1023217657143.671699939798.104743084609",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Sorry that location is not one I know. To get the list of locations in say, Cornwall, ask tide times for locations in Cornwall."
+                  }
               ]
-            }
-          ],
-          "samples": [
-            "ask tide times what are the stations in {county}",
-            "ask tide times for stations in {county}",
-            "ask tide times for  locations in {county}"
-          ]
-        },
-        {
-          "name": "AMAZON.MoreIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateSettingsIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NextIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.PageUpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.PageDownIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.PreviousIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ScrollRightIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ScrollDownIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ScrollLeftIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.ScrollUpIntent",
-          "samples": []
-        }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "id": "0544",
-              "name": {
-                "value": "Boscastle"
-              }
-            },
-            {
-              "id": "0543",
-              "name": {
-                "value": "Bude"
-              }
-            },
-            {
-              "id": "0547A",
-              "name": {
-                "value": "Cape Cornwall"
-              }
-            },
-            {
-              "id": "0014B",
-              "name": {
-                "value": "Cargreen"
-              }
-            },
-            {
-              "id": "0014C",
-              "name": {
-                "value": "Cotehele Quay"
-              }
-            },
-            {
-              "id": "0004",
-              "name": {
-                "value": "Coverack"
-              }
-            },
-            {
-              "id": "0005",
-              "name": {
-                "value": "Falmouth"
-              }
-            },
-            {
-              "id": "0008",
-              "name": {
-                "value": "Fowey"
-              }
-            },
-            {
-              "id": "0004A",
-              "name": {
-                "value": "Helford River"
-              }
-            },
-            {
-              "id": "0011",
-              "name": {
-                "value": "Looe"
-              }
-            },
-            {
-              "id": "0008A",
-              "name": {
-                "value": "Lostwithiel"
-              }
-            },
-            {
-              "id": "0003",
-              "name": {
-                "value": "Lizard Point"
-              }
-            },
-            {
-              "id": "0007",
-              "name": {
-                "value": "Mevagissey"
-              }
-            },
-            {
-              "id": "0546",
-              "name": {
-                "value": "Newquay"
-              }
-            },
-            {
-              "id": "0545",
-              "name": {
-                "value": "Padstow"
-              }
-            },
-            {
-              "id": "0007A",
-              "name": {
-                "value": "Par"
-              }
-            },
-            {
-              "id": "0002",
-              "name": {
-                "value": "Penzance"
-              }
-            },
-            {
-              "id": "0546A",
-              "name": {
-                "value": "Perranporth"
-              }
-            },
-            {
-              "id": "0544A",
-              "name": {
-                "value": "Port Issac"
-              }
-            },
-            {
-              "id": "0002A",
-              "name": {
-                "value": "Porthleven"
-              }
-            },
-            {
-              "id": "0014A",
-              "name": {
-                "value": "Saltash"
-              }
-            },
-            {
-              "id": "0548",
-              "name": {
-                "value": "Sennen Cove"
-              }
-            },
-            {
-              "id": "0014F",
-              "name": {
-                "value": "St. Germans"
-              }
-            },
-            {
-              "id": "0547",
-              "name": {
-                "value": "St. Ives"
-              }
-            },
-            {
-              "id": "0005A",
-              "name": {
-                "value": "Truro"
-              }
-            },
-            {
-              "id": "0545A",
-              "name": {
-                "value": "Wadebridge"
-              }
-            },
-            {
-              "id": "0012",
-              "name": {
-                "value": "Whitsand Bay"
-              }
-            },
-            {
-              "id": "0524",
-              "name": {
-                "value": "Cumberland Basin Entrance"
-              }
-            },
-            {
-              "id": "0523",
-              "name": {
-                "value": "AVONMOUTH"
-              }
-            },
-            {
-              "id": "0523B",
-              "name": {
-                "value": "Sea Mills"
-              }
-            },
-            {
-              "id": "0523A",
-              "name": {
-                "value": "Shirehampton"
-              }
-            },
-            {
-              "id": "0521",
-              "name": {
-                "value": "White House"
-              }
-            },
-            {
-              "id": "0066",
-              "name": {
-                "value": "Langstone Harbour"
-              }
-            },
-            {
-              "id": "0164A",
-              "name": {
-                "value": "Wisbech"
-              }
-            },
-            {
-              "id": "0108A",
-              "name": {
-                "value": "Bee Ness"
-              }
-            },
-            {
-              "id": "0462",
-              "name": {
-                "value": "Chester"
-              }
-            },
-            {
-              "id": "0108C",
-              "name": {
-                "value": "Darnett Ness"
-              }
-            },
-            {
-              "id": "0456A",
-              "name": {
-                "value": "Fiddler's Ferry"
-              }
-            },
-            {
-              "id": "0456",
-              "name": {
-                "value": "Widnes"
-              }
-            },
-            {
-              "id": "0440A",
-              "name": {
-                "value": "Arnside"
-              }
-            },
-            {
-              "id": "0439",
-              "name": {
-                "value": "BARROW"
-              }
-            },
-            {
-              "id": "0437",
-              "name": {
-                "value": "Duddon Bar"
-              }
-            },
-            {
-              "id": "0455",
-              "name": {
-                "value": "Hale Head"
-              }
-            },
-            {
-              "id": "0433",
-              "name": {
-                "value": "Maryport"
-              }
-            },
-            {
-              "id": "0439A",
-              "name": {
-                "value": "Roa Island"
-              }
-            },
-            {
-              "id": "0432",
-              "name": {
-                "value": "Silloth"
-              }
-            },
-            {
-              "id": "0436",
-              "name": {
-                "value": "Tarn Point"
-              }
-            },
-            {
-              "id": "0440",
-              "name": {
-                "value": "Ulverston"
-              }
-            },
-            {
-              "id": "0435",
-              "name": {
-                "value": "Whitehaven"
-              }
-            },
-            {
-              "id": "0434",
-              "name": {
-                "value": "Workington"
-              }
-            },
-            {
-              "id": "00188",
-              "name": {
-                "value": "Hartlepool"
-              }
-            },
-            {
-              "id": "0189",
-              "name": {
-                "value": "Seaham"
-              }
-            },
-            {
-              "id": "0536",
-              "name": {
-                "value": "Appledore"
-              }
-            },
-            {
-              "id": "0539",
-              "name": {
-                "value": "Barnstaple"
-              }
-            },
-            {
-              "id": "0540",
-              "name": {
-                "value": "Bideford"
-              }
-            },
-            {
-              "id": "0015A",
-              "name": {
-                "value": "Bovisand Pier"
-              }
-            },
-            {
-              "id": "0541",
-              "name": {
-                "value": "Clovelly"
-              }
-            },
-            {
-              "id": "0110A",
-              "name": {
-                "value": "CORYTON"
-              }
-            },
-            {
-              "id": "0023",
-              "name": {
-                "value": "DARTMOUTH"
-              }
-            },
-            {
-              "id": "0014",
-              "name": {
-                "value": "DEVONPORT"
-              }
-            },
-            {
-              "id": "0027",
-              "name": {
-                "value": "Exmouth Dock"
-              }
-            },
-            {
-              "id": "0538",
-              "name": {
-                "value": "Fremington"
-              }
-            },
-            {
-              "id": "0023A",
-              "name": {
-                "value": "Greenway Quay"
-              }
-            },
-            {
-              "id": "0535",
-              "name": {
-                "value": "Ilfracombe"
-              }
-            },
-            {
-              "id": "0014D",
-              "name": {
-                "value": "Lopwell"
-              }
-            },
-            {
-              "id": "0542",
-              "name": {
-                "value": "Lundy"
-              }
-            },
-            {
-              "id": "0534",
-              "name": {
-                "value": "Lynmouth"
-              }
-            },
-            {
-              "id": "0017",
-              "name": {
-                "value": "River Yealm Entrance"
-              }
-            },
-            {
-              "id": "0020",
-              "name": {
-                "value": "Salcombe"
-              }
-            },
-            {
-              "id": "0027A",
-              "name": {
-                "value": "Starcross"
-              }
-            },
-            {
-              "id": "0021",
-              "name": {
-                "value": "Start Point"
-              }
-            },
-            {
-              "id": "0023B",
-              "name": {
-                "value": "Stoke Gabriel"
-              }
-            },
-            {
-              "id": "0026",
-              "name": {
-                "value": "Teignmouth Approaches"
-              }
-            },
-            {
-              "id": "0026A",
-              "name": {
-                "value": "New Quay"
-              }
-            },
-            {
-              "id": "0027C",
-              "name": {
-                "value": "Topsham"
-              }
-            },
-            {
-              "id": "0025",
-              "name": {
-                "value": "TORQUAY"
-              }
-            },
-            {
-              "id": "0023C",
-              "name": {
-                "value": "Totnes"
-              }
-            },
-            {
-              "id": "0015",
-              "name": {
-                "value": "Turnchapel"
-              }
-            },
-            {
-              "id": "0121",
-              "name": {
-                "value": "Whitaker Beacon"
-              }
-            },
-            {
-              "id": "0537",
-              "name": {
-                "value": "Yelland Marsh"
-              }
-            },
-            {
-              "id": "0037",
-              "name": {
-                "value": "Bournemouth"
-              }
-            },
-            {
-              "id": "0029",
-              "name": {
-                "value": "Bridport"
-              }
-            },
-            {
-              "id": "0030",
-              "name": {
-                "value": "Chesil Beach"
-              }
-            },
-            {
-              "id": "0031",
-              "name": {
-                "value": "Chesil Cove"
-              }
-            },
-            {
-              "id": "0038",
-              "name": {
-                "value": "Christchurch Entrance"
-              }
-            },
-            {
-              "id": "0038A",
-              "name": {
-                "value": "Christchurch Quay"
-              }
-            },
-            {
-              "id": "0038B",
-              "name": {
-                "value": "Tuckton"
-              }
-            },
-            {
-              "id": "0036D",
-              "name": {
-                "value": "Cleavel Point"
-              }
-            },
-            {
-              "id": "0034",
-              "name": {
-                "value": "Lulworth Cove"
-              }
-            },
-            {
-              "id": "0028",
-              "name": {
-                "value": "Lyme Regis"
-              }
-            },
-            {
-              "id": "0034A",
-              "name": {
-                "value": "Mupe Bay"
-              }
-            },
-            {
-              "id": "0036",
-              "name": {
-                "value": "Poole Entrance"
-              }
-            },
-            {
-              "id": "0036A",
-              "name": {
-                "value": "POOLE HARBOUR"
-              }
-            },
-            {
-              "id": "0033",
-              "name": {
-                "value": "PORTLAND"
-              }
-            },
-            {
-              "id": "0036B",
-              "name": {
-                "value": "Pottery Pier"
-              }
-            },
-            {
-              "id": "0035",
-              "name": {
-                "value": "Swanage"
-              }
-            },
-            {
-              "id": "0036C",
-              "name": {
-                "value": "Wareham"
-              }
-            },
-            {
-              "id": "0179",
-              "name": {
-                "value": "Blacktoft"
-              }
-            },
-            {
-              "id": "0181",
-              "name": {
-                "value": "Bridlington"
-              }
-            },
-            {
-              "id": "0176A",
-              "name": {
-                "value": "Brough"
-              }
-            },
-            {
-              "id": "0180",
-              "name": {
-                "value": "GOOLE"
-              }
-            },
-            {
-              "id": "0175",
-              "name": {
-                "value": "HULL ALBERT DOCK"
-              }
-            },
-            {
-              "id": "0174A",
-              "name": {
-                "value": "Hull Alexandra Dock"
-              }
-            },
-            {
-              "id": "0174",
-              "name": {
-                "value": "HULL KING GEORGE DOCK"
-              }
-            },
-            {
-              "id": "0171",
-              "name": {
-                "value": "SPURN HEAD"
-              }
-            },
-            {
-              "id": "0082",
-              "name": {
-                "value": "Brighton Marina"
-              }
-            },
-            {
-              "id": "0084",
-              "name": {
-                "value": "Eastbourne"
-              }
-            },
-            {
-              "id": "0085",
-              "name": {
-                "value": "Hastings"
-              }
-            },
-            {
-              "id": "0083",
-              "name": {
-                "value": "NEWHAVEN"
-              }
-            },
-            {
-              "id": "0086",
-              "name": {
-                "value": "Rye Approaches"
-              }
-            },
-            {
-              "id": "0086A",
-              "name": {
-                "value": "Rye Harbour"
-              }
-            },
-            {
-              "id": "0084A",
-              "name": {
-                "value": "Sovereign Harbour"
-              }
-            },
-            {
-              "id": "0122C",
-              "name": {
-                "value": "Battlesbridge"
-              }
-            },
-            {
-              "id": "0123",
-              "name": {
-                "value": "Bradwell Waterside"
-              }
-            },
-            {
-              "id": "0126",
-              "name": {
-                "value": "Brightlingsea"
-              }
-            },
-            {
-              "id": "0122",
-              "name": {
-                "value": "BURNHAM-ON-CROUCH"
-              }
-            },
-            {
-              "id": "0128",
-              "name": {
-                "value": "Clacton-On-Sea"
-              }
-            },
-            {
-              "id": "0127",
-              "name": {
-                "value": "Colchester"
-              }
-            },
-            {
-              "id": "0131",
-              "name": {
-                "value": "HARWICH"
-              }
-            },
-            {
-              "id": "0121A",
-              "name": {
-                "value": "Holliwell Point"
-              }
-            },
-            {
-              "id": "0122B",
-              "name": {
-                "value": "Hullbridge"
-              }
-            },
-            {
-              "id": "0123B",
-              "name": {
-                "value": "Maldon"
-              }
-            },
-            {
-              "id": "0132",
-              "name": {
-                "value": "Mistley"
-              }
-            },
-            {
-              "id": "0122A",
-              "name": {
-                "value": "North Fambridge"
-              }
-            },
-            {
-              "id": "0123A",
-              "name": {
-                "value": "Osea Island"
-              }
-            },
-            {
-              "id": "0121B",
-              "name": {
-                "value": "Rochford"
-              }
-            },
-            {
-              "id": "0110",
-              "name": {
-                "value": "Southend-On-Sea"
-              }
-            },
-            {
-              "id": "0111",
-              "name": {
-                "value": "TILBURY"
-              }
-            },
-            {
-              "id": "0129",
-              "name": {
-                "value": "WALTON-ON-THE-NAZE"
-              }
-            },
-            {
-              "id": "0124",
-              "name": {
-                "value": "West Mersea"
-              }
-            },
-            {
-              "id": "0518",
-              "name": {
-                "value": "Beachley"
-              }
-            },
-            {
-              "id": "0522",
-              "name": {
-                "value": "Berkeley"
-              }
-            },
-            {
-              "id": "0522C",
-              "name": {
-                "value": "Epney"
-              }
-            },
-            {
-              "id": "0522D",
-              "name": {
-                "value": "Minsterworth"
-              }
-            },
-            {
-              "id": "0522A",
-              "name": {
-                "value": "Sharpness Dock"
-              }
-            },
-            {
-              "id": "0001",
-              "name": {
-                "value": "ST. MARY'S"
-              }
-            },
-            {
-              "id": "0522B",
-              "name": {
-                "value": "Wellhouse Rock"
-              }
-            },
-            {"id":"0114","name":{"value":"Albert Bridge"}},
-            {"id":"0113A","name":{"value":"Chelsea Bridge"}},
-            {"id":"0113","name":{"value":"LONDON BRIDGE"}},
-            {"id":"0112","name":{"value":"NORTH WOOLWICH"}},
-            {"id":"0063","name":{"value":"Redbridge"}},
-            {"id":"0042","name":{"value":"Bucklers Hard"}},
-            {"id":"0063B","name":{"value":"Bursledon"}},
-            {"id":"0061","name":{"value":"Calshot Castle"}},
-            {"id":"0039","name":{"value":"Hurst Point"}},
-            {"id":"0064","name":{"value":"Lee-On-The-Solent"}},
-            {"id":"0040","name":{"value":"LYMINGTON"}},
-            {"id":"0068A","name":{"value":"Northney"}},
-            {"id":"0065","name":{"value":"PORTSMOUTH"}},
-            {"id":"0065A","name":{"value":"PORTSMOUTH HIGH WATER STAND"}},
-            {"id":"0062","name":{"value":"SOUTHAMPTON"}},
-            {"id":"0063A","name":{"value":"WARSASH"}},
-            {"id":"0014E","name":{"value":"Jupiter Point"}},
-            {"id":"0053B","name":{"value":"Bembridge Approaches"}},
-            {"id":"0054","name":{"value":"Bembridge Harbour"}},
-            {"id":"0060","name":{"value":"COWES"}},
-            {"id":"0048","name":{"value":"Freshwater Bay"}},
-            {"id":"0060B","name":{"value":"Newport"}},
-            {"id":"0058","name":{"value":"Ryde"}},
-            {"id":"0053","name":{"value":"Sandown"}},
-            {"id":"0046","name":{"value":"Totland Bay"}},
-            {"id":"0051","name":{"value":"Ventnor"}},
-            {"id":"0108B","name":{"value":"Bartlett Creek"}},
-            {"id":"0109E","name":{"value":"Allington Lock"}},
-            {"id":"0129A","name":{"value":"Bramble Creek"}},
-            {"id":"0102A","name":{"value":"Broadstairs"}},
-            {"id":"0109","name":{"value":"Chatham"}},
-            {"id":"0098","name":{"value":"Deal"}},
-            {"id":"0089","name":{"value":"DOVER"}},
-            {"id":"0087","name":{"value":"Dungeness"}},
-            {"id":"0107","name":{"value":"Faversham"}},
-            {"id":"0088","name":{"value":"Folkestone"}},
-            {"id":"0111A","name":{"value":"Gravesend"}},
-            {"id":"0104","name":{"value":"Herne Bay"}},
-            {"id":"0103","name":{"value":"MARGATE"}},
-            {"id":"0109D","name":{"value":"New Hythe"}},
-            {"id":"0102","name":{"value":"RAMSGATE"}},
-            {"id":"0099","name":{"value":"Richborough"}},
-            {"id":"0109B","name":{"value":"Rochester"}},
-            {"id":"0108","name":{"value":"SHEERNESS"}},
-            {"id":"0116A","name":{"value":"Shivering Sand"}},
-            {"id":"0109A","name":{"value":"Upnor"}},
-            {"id":"0105","name":{"value":"Whitstable Approaches"}},
-            {"id":"0109C","name":{"value":"Wouldham"}},
-            {"id":"0445","name":{"value":"Blackpool"}},
-            {"id":"0444","name":{"value":"Fleetwood"}},
-            {"id":"0442","name":{"value":"Glasson Dock"}},
-            {"id":"0439B","name":{"value":"Haws Point"}},
-            {"id":"0441","name":{"value":"Heysham"}},
-            {"id":"0442A","name":{"value":"Lancaster"}},
-            {"id":"0440B","name":{"value":"Morecambe"}},
-            {"id":"0446","name":{"value":"Preston"}},
-            {"id":"0443","name":{"value":"Wyre Lighthouse"}},
-            {"id":"0166","name":{"value":"BOSTON"}},
-            {"id":"0171A","name":{"value":"Bull Sand Fort"}},
-            {"id":"0177","name":{"value":"Burton Stather"}},
-            {"id":"0177A","name":{"value":"FLIXBOROUGH WHARF"}},
-            {"id":"0176","name":{"value":"Humber Bridge"}},
-            {"id":"0173","name":{"value":"IMMINGHAM"}},
-            {"id":"0178","name":{"value":"Keadby"}},
-            {"id":"0164B","name":{"value":"Lawyer's Creek"}},
-            {"id":"0163","name":{"value":"Outer Westmark Knock"}},
-            {"id":"0178A","name":{"value":"Owston Ferry"}},
-            {"id":"0164","name":{"value":"Port Sutton Bridge"}},
-            {"id":"0167","name":{"value":"Skegness"}},
-            {"id":"0163A","name":{"value":"Wisbech Cut"}},
-            {"id":"0448","name":{"value":"Formby"}},
-            {"id":"0452A","name":{"value":"Garston"}},
-            {"id":"0461","name":{"value":"Hilbre Island"}},
-            {"id":"0451","name":{"value":"LIVERPOOL"}},
-            {"id":"0447","name":{"value":"Southport"}},
-            {"id":"0155A","name":{"value":"Blakeney"}},
-            {"id":"0155","name":{"value":"Blakeney Bar"}},
-            {"id":"0158","name":{"value":"Burnham"}},
-            {"id":"0143","name":{"value":"Caister-On-Sea"}},
-            {"id":"0154","name":{"value":"Cromer"}},
-            {"id":"0142A","name":{"value":"Great Yarmouth"}},
-            {"id":"0142","name":{"value":"GORLESTON-ON-SEA"}},
-            {"id":"0161","name":{"value":"Hunstanton"}},
-            {"id":"0162","name":{"value":"King's Lynn"}},
-            {"id":"0130","name":{"value":"Sunk Head"}},
-            {"id":"0027B","name":{"value":"Turf Lock"}},
-            {"id":"0157","name":{"value":"Wells Bar"}},
-            {"id":"0144","name":{"value":"Winterton-On-Sea"}},
-            {"id":"0045","name":{"value":"Yarmouth"}},
-            {"id":"0182","name":{"value":"Filey Bay"}},
-            {"id":"0186","name":{"value":"Middlesbrough"}},
-            {"id":"0183","name":{"value":"Scarborough"}},
-            {"id":"0187","name":{"value":"Newport Bridge"}},
-            {"id":"0184","name":{"value":"Whitby"}},
-            {"id":"0026B","name":{"value":"Exmouth"}},
-            {"id":"0053A","name":{"value":"Foreland"}},
-            {"id":"0106","name":{"value":"Grovehurst Jetty"}},
-            {"id":"0439C","name":{"value":"Halfway Shoal"}},
-            {"id":"0172A","name":{"value":"HUMBER SEA TERMINAL"}},
-            {"id":"0168","name":{"value":"Inner Dowsing Light"}},
-            {"id":"0519","name":{"value":"Inward Rocks"}},
-            {"id":"0139A","name":{"value":"Minsmere Sluice"}},
-            {"id":"0520","name":{"value":"Narlwood Rocks"}},
-            {"id":"0136","name":{"value":"Orford Haven Bar"}},
-            {"id":"0185","name":{"value":"RIVER TEES ENTRANCE"}},
-            {"id":"0452","name":{"value":"Seacombe"}},
-            {"id":"0043","name":{"value":"Stansore Point"}},
-            {"id":"0171B","name":{"value":"Sunk Dredged Channel"}},
-            {"id":"0165","name":{"value":"Tabs Head"}},
-            {"id":"0206","name":{"value":"Amble"}},
-            {"id":"0209","name":{"value":"Berwick"}},
-            {"id":"0204","name":{"value":"BLYTH"}},
-            {"id":"0205","name":{"value":"Coquet Island"}},
-            {"id":"0208","name":{"value":"Holy Island"}},
-            {"id":"0207","name":{"value":"North Sunderland"}},
-            {"id":"0060A","name":{"value":"Folly Inn"}},
-            {"id":"0529","name":{"value":"Bridgwater"}},
-            {"id":"0528","name":{"value":"Burnham-On-Sea"}},
-            {"id":"0525","name":{"value":"Clevedon"}},
-            {"id":"0526","name":{"value":"English And Welsh Grounds"}},
-            {"id":"0530","name":{"value":"Hinkley Point"}},
-            {"id":"0532","name":{"value":"Minehead"}},
-            {"id":"0533","name":{"value":"Porlock Bay"}},
-            {"id":"0524A","name":{"value":"Portishead"}},
-            {"id":"0117","name":{"value":"S.E. Long Sand"}},
-            {"id":"0525A","name":{"value":"St. Thomas's Head"}},
-            {"id":"0531","name":{"value":"Watchet"}},
-            {"id":"0157A","name":{"value":"Wells"}},
-            {"id":"0161A","name":{"value":"West Stones"}},
-            {"id":"0527","name":{"value":"Weston-Super-Mare"}},
-            {"id":"0139","name":{"value":"Aldeburgh"}},
-            {"id":"0135","name":{"value":"Bawdsey"}},
-            {"id":"0133A","name":{"value":"FELIXSTOWE PIER"}},
-            {"id":"0136C","name":{"value":"Iken Cliffs"}},
-            {"id":"0133","name":{"value":"Ipswich"}},
-            {"id":"0141","name":{"value":"LOWESTOFT"}},
-            {"id":"0137","name":{"value":"Orford Ness"}},
-            {"id":"0136A","name":{"value":"Orford Quay"}},
-            {"id":"0136B","name":{"value":"Slaughden Quay"}},
-            {"id":"0140","name":{"value":"Southwold"}},
-            {"id":"0134A","name":{"value":"Woodbridge"}},
-            {"id":"0134","name":{"value":"Woodbridge Haven"}},
-            {"id":"0115","name":{"value":"Hammersmith Bridge"}},
-            {"id":"0115A","name":{"value":"Kew Bridge"}},
-            {"id":"0116","name":{"value":"Richmond Lock"}},
-            {"id":"0203","name":{"value":"Newcastle-Upon-Tyne"}},
-            {"id":"0202","name":{"value":"NORTH SHIELDS"}},
-            {"id":"0190","name":{"value":"SUNDERLAND"}},
-            {"id":"0074B","name":{"value":"Arundel"}},
-            {"id":"0073","name":{"value":"Bognor Regis"}},
-            {"id":"0068B","name":{"value":"Bosham"}},
-            {"id":"0068","name":{"value":"CHICHESTER HARBOUR"}},
-            {"id":"0068D","name":{"value":"Dell Quay"}},
-            {"id":"0068C","name":{"value":"Itchenor"}},
-            {"id":"0074","name":{"value":"Littlehampton"}},
-            {"id":"0070","name":{"value":"Nab Tower"}},
-            {"id":"0072","name":{"value":"Pagham"}},
-            {"id":"0069","name":{"value":"Selsey Bill"}},
-            {"id":"0081","name":{"value":"SHOREHAM"}},
-            {"id":"0075","name":{"value":"Worthing"}}
-          ],
-          "name": "TidalStationsType"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "Buckinghamshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Cambridgeshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Cheshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Cornwall"
-              }
-            },
-            {
-              "name": {
-                "value": "County Durham"
-              }
-            },
-            {
-              "name": {
-                "value": "Cumberland"
-              }
-            },
-            {
-              "name": {
-                "value": "Devon"
-              }
-            },
-            {
-              "name": {
-                "value": "Dorset"
-              }
-            },
-            {
-              "name": {
-                "value": "East Riding of Yorkshire"
-              }
-            },
-            {
-              "name": {
-                "value": "East Sussex"
-              }
-            },
-            {
-              "name": {
-                "value": "East Riding of Yorkshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Gloucstershire"
-              }
-            },
-            {
-              "name": {
-                "value": "Greater London"
-              }
-            },
-            {
-              "name": {
-                "value": "Hampshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Hertfordshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Isle of Wight"
-              }
-            },
-            {
-              "name": {
-                "value": "Kent"
-              }
-            },
-            {
-              "name": {
-                "value": "Lancashire"
-              }
-            },
-            {
-              "name": {
-                "value": "Lincolnshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Merseyside"
-              }
-            },
-            {
-              "name": {
-                "value": "Norfolk"
-              }
-            },
-            {
-              "name": {
-                "value": "North Yorkshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Northamptonshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Northumberland"
-              }
-            },
-            {
-              "name": {
-                "value": "Oxfordshire"
-              }
-            },
-            {
-              "name": {
-                "value": "Somerset"
-              }
-            },
-            {
-              "name": {
-                "value": "Suffolk"
-              }
-            },
-            {
-              "name": {
-                "value": "Surrey"
-              }
-            },
-            {
-              "name": {
-                "value": "Tyne and Wear"
-              }
-            },
-            {
-              "name": {
-                "value": "West Sussex"
-              }
-            },
-            {
-              "name": {
-                "value": "Worcestershire"
-              }
-            }
-          ],
-          "name": "Counties"
-        }
+          },
+          {
+              "id": "Elicit.Slot.428401476603.631702789540",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Just say the name of the county you want?"
+                  }
+              ]
+          },
+          {
+              "id": "Elicit.Slot.220590670923.663829450522",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Say the name of a tidal station, for valid stations, ask tide times for stations in Cornwall, for example?"
+                  }
+              ]
+          },
+          {
+              "id": "Slot.Validation.1014952757419.815202282794.460636972215",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Sorry but {county} is not an available county, try again."
+                  }
+              ]
+          }
       ]
-    },
-    "dialog": {
-      "intents": [
-        {
-          "name": "GetTidalDataIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "location",
-              "type": "TidalStationsType",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.220590670923.663829450522"
-              },
-              "validations": [
-                {
-                  "type": "hasEntityResolutionMatch",
-                  "prompt": "Slot.Validation.1023217657143.671699939798.104743084609"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "GetTidalStationsIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "county",
-              "type": "Counties",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.428401476603.631702789540"
-              },
-              "validations": [
-                {
-                  "type": "hasEntityResolutionMatch",
-                  "prompt": "Slot.Validation.894847228852.133612030681.605098055019"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "delegationStrategy": "SKILL_RESPONSE"
-    },
-    "prompts": [
-      {
-        "id": "Slot.Validation.1023217657143.671699939798.104743084609",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Sorry that location is not one I know. To get the list of locations in say, Cornwall, ask tide times for locations in Cornwall."
-          }
-        ]
-      },
-      {
-        "id": "Slot.Validation.894847228852.133612030681.605098055019",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "The available counties are those in England. Try again."
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.428401476603.631702789540",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "The available counties are those in England, just say the name of the county you want?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Slot.220590670923.663829450522",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Say the name of a tidal station, for valid stations, ask tide times for stations in Cornwall, for example?"
-          }
-        ]
-      }
-    ]
   }
 }
